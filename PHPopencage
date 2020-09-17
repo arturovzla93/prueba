@@ -1,0 +1,8 @@
+<?php
+
+	ini_set('display_errors', 'On');
+	error_reporting(E_ALL);
+
+	include('openCage/AbstractGeocoder.php');
+	include('openCage/Geocoder.php');
+  $geocoder = new \OpenCage\Geocoder\Geocoder('688b3d4cf14f40ab9eed0a865b4a1d9d');
