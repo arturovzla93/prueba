@@ -6,16 +6,11 @@
 	include('openCage/AbstractGeocoder.php');
 	include('openCage/Geocoder.php');
 	
-        $geocoder = new \OpenCage\Geocoder\Geocoder('688b3d4cf14f40ab9eed0a865b4a1d9d');
-	
+	$geocoder = new \OpenCage\Geocoder\Geocoder('688b3d4cf14f40ab9eed0a865b4a1d9d');
         $result = $geocoder->geocode('51.49778, -0.02493', ['language'=> 'en']);
-	
         print $result['results'][0]['formatted'];
 	
-	echo "here is my test";
-	
-	​header​(​'Content-Type: application/json; charset=UTF-8'​);
-	
+	header​(​'Content-Type: application/json; charset=UTF-8'​);
         ​echo​ ​json_encode​(​$result​[​'results'​], JSON_UNESCAPED_UNICODE);
-
+	
 ?>
